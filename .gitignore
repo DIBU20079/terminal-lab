@@ -1,0 +1,17 @@
+#Temporales del editor
+*.swp
+*.tmp
+*.bak
+*~
+# Salidas generadas por los scripts
+organized/
+mezcla/
+trabajo/
+respaldos/
+*.tar.gz
+*.zip
+
+# Credenciales
+*.pem
+*.key
+.env
