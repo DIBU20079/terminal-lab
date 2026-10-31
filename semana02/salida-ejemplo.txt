@@ -1,0 +1,81 @@
+=== /etc ===
+/etc guarda archivos de configuracion del sistema en texto plano.
+total 520
+-rw-r--r-- 1 root root    3981 May  6  2025 adduser.conf
+drwxr-xr-x 2 root root    4096 May 16 09:32 alternatives
+drwxr-xr-x 8 root root    4096 May 16 09:31 apt
+-rw-r--r-- 1 root root    1997 May  9 07:07 bash.bashrc
+-rw-r--r-- 1 root root      45 Jan 12  2025 bash_completion
+drwxr-xr-x 2 root root    4096 Oct 25 13:08 bash_completion.d
+-rw-r--r-- 1 root root     367 Apr 27  2026 bindresvport.blacklist
+drwxr-xr-x 2 root root    4096 Apr 13  2026 binfmt.d
+drwxr-xr-x 3 root root    4096 May 16 09:31 ca-certificates
+-rw-r--r-- 1 root root    6422 May 16 09:32 ca-certificates.conf
+drwx------ 2 root root    4096 Apr 13  2026 credstore
+drwx------ 2 root root    4096 Apr 13  2026 credstore.encrypted
+drwxr-xr-x 2 root root    4096 May 16 09:32 cron.d
+drwxr-xr-x 2 root root    4096 May 16 09:32 cron.daily
+drwxr-xr-x 2 root root    4096 May 16 09:31 cron.hourly
+drwxr-xr-x 2 root root    4096 May 16 09:31 cron.monthly
+-rw-r--r-- 1 root root    1042 Jun 13  2025 crontab
+drwxr-xr-x 2 root root    4096 May 16 09:31 cron.weekly
+drwxr-xr-x 2 root root    4096 May 16 09:31 cron.yearly
+----------------------------------------
+
+=== /var ===
+/var guarda datos que cambian: registros, colas y caches.
+total 36K
+drwxr-xr-x  2 root root 4.0K Oct 31 10:13 backups
+drwxr-xr-x  7 root root 4.0K May 16 09:31 cache
+drwxr-xr-x 14 root root 4.0K Oct 25 13:21 lib
+drwxr-xr-x  2 root root 4.0K May  8 12:10 local
+lrwxrwxrwx  1 root root    9 May 16 09:31 lock -> /run/lock
+drwxr-xr-x  5 root root 4.0K Oct 25 13:08 log
+drwxrwsr-x  2 root mail 4.0K May 16 09:31 mail
+drwxr-xr-x  2 root root 4.0K May 16 09:31 opt
+lrwxrwxrwx  1 root root    4 May 16 09:31 run -> /run
+drwxr-xr-x  3 root root 4.0K May 16 09:31 spool
+drwxrwxrwt  3 root root 4.0K Oct 31 09:55 tmp
+----------------------------------------
+
+=== /home ===
+/home contiene un subdirectorio por usuario con sus archivos personales.
+total 4
+drwx------ 7 DIBU DIBU 4096 Oct 31 15:44 DIBU
+----------------------------------------
+=== /bin ===
+/bin contiene programas esenciales disponibles para todo usuario.
+lrwxrwxrwx 1 root root 7 May  8 12:10 /bin -> usr/bin
+----------------------------------------
+
+=== /tmp ===
+/tmp contiene archivos temporales que se vacian al reiniciar.
+total 0
+drwx------ 3 root root 60 Oct 31 09:51 systemd-private-be26e3d77a23411489cdcf0b53449101-systemd-logind.service-oliLmo
+----------------------------------------
+
+=== /proc ===
+/proc es un sistema virtual: el kernel genera su contenido al leerlo.
+total 0
+dr-xr-xr-x  9 root       root                     0 Oct 31 09:51 1
+dr-xr-xr-x  9 root       root                     0 Oct 31 09:51 127
+dr-xr-xr-x  9 messagebus messagebus               0 Oct 31 09:51 129
+dr-xr-xr-x  9 root       root                     0 Oct 31 09:51 134
+dr-xr-xr-x  9 root       root                     0 Oct 31 09:51 167
+dr-xr-xr-x  9 root       root                     0 Oct 31 09:51 169
+dr-xr-xr-x  9 root       DIBU                     0 Oct 31 09:51 183
+dr-xr-xr-x  9 DIBU       DIBU                     0 Oct 31 09:51 193
+dr-xr-xr-x  9 DIBU       DIBU                     0 Oct 31 09:51 195
+dr-xr-xr-x  9 root       root                     0 Oct 31 09:51 2
+dr-xr-xr-x  9 DIBU       DIBU                     0 Oct 31 09:51 209
+dr-xr-xr-x  9 DIBU       DIBU                     0 Oct 31 09:51 245
+dr-xr-xr-x  9 DIBU       DIBU                     0 Oct 31 10:01 246
+dr-xr-xr-x  9 DIBU       DIBU                     0 Oct 31 09:51 249
+dr-xr-xr-x  9 DIBU       DIBU                     0 Oct 31 09:51 254
+dr-xr-xr-x  9 root       root                     0 Oct 31 09:51 39
+dr-xr-xr-x  9 root       root                     0 Oct 31 15:44 567
+dr-xr-xr-x  9 root       root                     0 Oct 31 15:44 568
+dr-xr-xr-x  9 DIBU       DIBU                     0 Oct 31 10:10 569
+----------------------------------------
+
+Exploracion completada.
