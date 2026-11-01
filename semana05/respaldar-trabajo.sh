@@ -22,3 +22,12 @@ find . -type f -mtime -"$DIAS" \
     ! -name "*~" \
     ! -path "./respaldos/*" \
     -print0 | tar --null -czf "$RUTA" --files-from=-
+
+CANTIDAD=''
+CANTIDAT=$( tar -tzf "$RUTA" | wc -l )
+PESO=$( du -h "$RUTA" | cut -f1 )
+
+echo "Dias considerados: $DIAS"
+echo "Archivos respaldados: $CANTIDAD"
+echo "Tamano del paquete: $PESO"
+echo "Ruta del paquete: $RUTA"
