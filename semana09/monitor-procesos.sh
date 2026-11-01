@@ -22,3 +22,7 @@ echo
 
 echo "=== Procesos por estado ==="
 ps -eo stat= | cut -c1 | sort | uniq -c | sort -nr
+
+echo
+echo "=== Arbol de la sesion actual ==="
+ps -f --asciitree 2>/dev/null || ps -ef | head -n 15
