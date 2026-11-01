@@ -29,6 +29,21 @@ case "$OPCION" in
         uptime -p
         free -h | head -n 2
         ;;
+    -u)
+        echo "=== Usuario ==="
+        whoami
+        id
+        groups
+        ;;
+    -d)
+        echo "=== Disco ==="
+        df -h | head -n 10
+        du -sh . 2>/dev/null || true
+        ;;
+    *)
+        echo "Opcion invalida: $OPCION" >&2
+        uso
+        ;;
 esac
 
 exit 0
