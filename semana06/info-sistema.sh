@@ -3,7 +3,7 @@
 # Autor: Marvin Atahuichi
 # Fecha: 2026-02-15
 # Uso: ./info-sistema.sh [-u] [-d] [-h]
-# Codigosde salida: 0 exito, 2 uso incorrecto
+# Codigos de salida: 0 exito, 2 uso incorrecto
 
 set -euo pipefail
 
@@ -17,4 +17,18 @@ uso() {
 }
 
 if [[ "${1:-}" == "-h" ]]; then
-    uso	fi
+    uso
+fi
+
+OPCION="${1:-}"
+case "$OPCION" in
+    "")
+        echo "=== Sistema ==="
+        uname -a
+        head -n 5 /etc/os-release
+        uptime -p
+        free -h | head -n 2
+        ;;
+esac
+
+exit 0
