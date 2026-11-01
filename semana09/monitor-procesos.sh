@@ -26,3 +26,13 @@ ps -eo stat= | cut -c1 | sort | uniq -c | sort -nr
 echo
 echo "=== Arbol de la sesion actual ==="
 ps -f --asciitree 2>/dev/null || ps -ef | head -n 15
+
+echo
+echo "=== Ciclo de vida de un proceso en segundo plano ==="
+sleep 30 &
+PID=$!
+echo "Proceso lanzado con PID=$PID"
+ps -p "$PID" -o pid,stat,comm
+
+echo "Enviando SIGTERM a $PID..."
+kill -TERM "
