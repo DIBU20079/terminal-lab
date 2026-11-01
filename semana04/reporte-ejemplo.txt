@@ -1,0 +1,13 @@
+=== Top 5 IP con mas peticiones ===
+      7 192.168.1.45
+      4 192.168.1.12
+      3 192.168.1.77
+      3 10.0.0.8
+      3 10.0.0.23
+
+=== Conteo por codigo de estado ===
+      2 404
+      3 500
+     15 200
+
+=== Lineas con error 500 ===
