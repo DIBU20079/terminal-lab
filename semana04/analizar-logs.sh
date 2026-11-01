@@ -10,3 +10,8 @@ LOG="acceso.log"
 echo "=== Top 5 IP con mas peticiones ==="
 # awk toma la columna 1 (IP); sort agrupa; uniq -c cuenta; sort -nr ordena de mayor a menor
 awk '{print $1}' "$LOG" | sort | uniq -c | sort -nr | head -n 5
+
+echo
+echo "=== Conteo por codigo de estado ==="
+# El estado es el campo 9 en el formato Apache usado aqui
+awk '{print $9}' "$LOG" | sort | uniq -c | sort -n
