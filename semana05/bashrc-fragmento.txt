@@ -1,0 +1,2 @@
+# Fragmento agregado a ~/.bashrc para respaldar-trabajo
+Y^ܝ PATH="$HOME/bin:$PATH"
